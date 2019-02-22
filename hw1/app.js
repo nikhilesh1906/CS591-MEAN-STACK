@@ -24,7 +24,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//app.use('/', indexRouter);
+app.use('/', indexRouter);
 app.use('/hw1', usersRouter);
 
 // catch 404 and forward to error handler

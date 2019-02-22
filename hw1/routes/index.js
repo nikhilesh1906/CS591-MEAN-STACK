@@ -13,7 +13,7 @@ router.use(function printTime(req, res, next)  {
 // });
 
 router.get('/', function(req, res, next) {
-  res.json({String : 'Nikhilesh'});
+  res.render('index', { title: 'Nik\'s HW1!!' });
 });
 
 // router.get('/about', function(req, res, next) {
