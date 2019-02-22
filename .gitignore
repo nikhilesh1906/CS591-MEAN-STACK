@@ -35,9 +35,6 @@ cmake-build-release/
 # IntelliJ
 out/
 
-#node_modules
-/Users/nikhileshm/WebstormProjects/CS591-MEAN-STACK/hw1/node_modules
-
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -56,3 +53,4 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+/hw1/node_modules/
