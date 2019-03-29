@@ -1,10 +1,6 @@
 extends layout
 
 block content
-    h3= title
-    h4= 'Hello Boston!'
-    script.
-        //myObj = JSON.parse(weather);
-        $('h1').html(weather.name);
-        var output = document.getElementById('output');
-        output.innerHTML = weather;
+    h3= 'Live Weather Feed from OpenWeather API'
+    h4= 'Hello Boston!!'
+    h4= `It's ${degrees} degrees in ${city}, ${country}!`

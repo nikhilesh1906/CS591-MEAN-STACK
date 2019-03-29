@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var request = require('request');
+let express = require('express');
+let router = express.Router();
+let request = require('request');
 let url = 'http://api.openweathermap.org/data/2.5/weather?id=4317656&appid=0286ab29f6b6de6fcbf7dea717998071&units=imperial';
 let weather = null;
 
@@ -18,9 +18,10 @@ router.get('/weather', function (req, res, next) {
             weather = JSON.parse(body);
             let message = `It's ${weather.main.temp} degrees in ${weather.name}!`;
             console.log(message);
+            console.log(weather);
+            res.render('weather', { degrees: weather.main.temp, city: weather.name, country: weather.sys.country })
         }
-    }).pipe(res); //This will pipe() the request() result into the res object and it will become the response to the original http request
-    res.render('weather', { title: "Results from Weather API" });
+    })
 });
 
 module.exports = router;
