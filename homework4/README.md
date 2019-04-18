@@ -1,6 +1,9 @@
 # Homework4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+A service has been used for consuming a weather api and displaying the current temperature in Boston.
+Routing has been used to display a list of users. On clicking the user, the user profile shows up as the default view for the user - which is editable.
+Cookies are used to maintain the state of the user
 
 ## Development server
 
