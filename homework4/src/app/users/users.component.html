@@ -1,0 +1,8 @@
+<div>
+  <h2>User Page</h2>
+<ul class="users">
+  <li *ngFor="let user of users"><a routerLink="/users/profile">{{user.name}}</a></li>
+</ul>
+  <app-user-profile [childMessage]="users"></app-user-profile>
+</div>
+<router-outlet></router-outlet>
